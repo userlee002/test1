@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std ;
-
+// winner
 int main(){
 	long long n , q , a ;
 	cin >> n >> q ;
@@ -13,6 +13,7 @@ int main(){
 		a-- ;
 		num[a/100000][a%100000] ++ ;
 	}
+	// ppap 
 	num[0][0] = num[0][0]%2 ; 
 	for( long long i=1 ; i<214748364 ; i++ ){
 		num[i/100000][i%100000] = num[(i-1)/100000][(i-1)%100000] ;
